@@ -610,22 +610,30 @@ nav li.dropdown:hover .dropdown-content {
 }
 
 #novidades_sieb_titulo {
-    text-align: center;
+    
     font-family: 'Open Sans';
     font-size: 40px;
-    margin: 0 auto;
     max-width: 500px;
     font-weight: bold;
     color: white;
+    top: 200px;
+    right: 100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #novidades_sieb_subtitulo {
-    text-align: center;
+    
     font-family: 'Open Sans';
     font-size: 35px;
-    margin: 0 auto;
+    top: 10px;
     max-width: 300px;
     color: white;
+    right: 100px;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 400px; 
+    
 }
 
 #novidades_sieb_subtitulo2 {
@@ -635,7 +643,8 @@ nav li.dropdown:hover .dropdown-content {
     font-weight: bold;
     position: absolute;
     right: 100px;
-    top: 200px;
+    top: 1150px;
+    color: #fff;
 
 }
 
@@ -646,7 +655,9 @@ nav li.dropdown:hover .dropdown-content {
     position: absolute;
     max-width: 800px;
     right: 100px;
-    top: 300px
+    top: 1200px;
+    color:#fff
+    
 }
 
 #foto2_sieb img {
@@ -664,6 +675,8 @@ nav li.dropdown:hover .dropdown-content {
     position: absolute;
     left: 150px;
     bottom: 1350px;
+    top: 1850px;
+    color: #fff;
 }
 
 #texto2_sieb {
@@ -674,6 +687,8 @@ nav li.dropdown:hover .dropdown-content {
     max-width: 800px;
     left: 100px;
     bottom: 1000px;
+    top: 1900px;
+    color: #fff;
 }
 
 #foto3_sieb img {
@@ -691,6 +706,8 @@ nav li.dropdown:hover .dropdown-content {
     position: absolute;
     right: 250px;
     bottom: 500px;
+    top: 2650px;
+    color: #fff;
 }
 
 #texto3_sieb {
@@ -701,6 +718,8 @@ nav li.dropdown:hover .dropdown-content {
     max-width: 800px;
     right: 100px;
     bottom: 200px;
+    top: 2700px;
+    color: #fff;
 }
 
 #rodape_novidades {
@@ -709,6 +728,7 @@ nav li.dropdown:hover .dropdown-content {
     color: white;
     position: relative;
     bottom: 150px;
+    top: 100px;
 }
 
 #copyright_novidades {
@@ -716,6 +736,7 @@ nav li.dropdown:hover .dropdown-content {
     text-align: center;
     position: relative;
     bottom: 90px;
+    top: 100px;
 }
 
 /* Fim da Página Novidades */
