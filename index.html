@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <script defer src="functions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SIEB</title>
 </head>
 
@@ -39,7 +40,7 @@
     <div id="modal" class="modal" onclick="fecharModal(event)">
         <div class="modal-content">
             <h2 id="titulo_fazer_login">Fazer login</h2>
-            <span class="close" onclick="fecharModal(event)">&times;</span> <!-- Botão de fechar -->
+            <span id="close_login" class="close" onclick="fecharModal(event)">&times;</span> <!-- Botão de fechar -->
             <div id="input_login">
                 <input type="text" id="username" placeholder="Usuário">
                 <input type="password" id="password" placeholder="Senha">
@@ -64,13 +65,13 @@
 
     <div id="carousel_inicial">
         <div class="slide_inicial">
-            <img src="imagens/carrosel1.png" alt="Imagem 1">
+            <img src="imagens/carrossel1.png" alt="Imagem 1">
         </div>
         <div class="slide_inicial">
-            <img src="imagens/carrosel2.png" alt="Imagem 2">
+            <img src="imagens/carrossel2.png" alt="Imagem 2">
         </div>
         <div class="slide_inicial">
-            <img src="imagens/carrosel3.png" alt="Imagem 3">
+            <img src="imagens/carrossel3.png" alt="Imagem 3">
         </div>
     </div>
 
@@ -85,9 +86,9 @@
         <p id="subteste2_inicial"> Estudantes do SIEB</p>
     </div>
 
-    <div class="container">
-        <img class="image" src="imagens/frase_inicial.png" alt="Louisa May Alcott"> 
-        <p class="text"> "Eu não tenho medo de tempestades, pois estou aprendendo a navegar no meu navio" - Louisa May Alcott</p> 
+    <div>
+        <img id="imagem_frase_inicial" src="imagens/frase_inicial.png" alt="Louisa May Alcott"> 
+        <p id="texto_frase_inicial"> "Eu não tenho medo de tempestades, pois estou aprendendo a navegar no meu navio"<br> - Louisa May Alcott</p> 
     </div>
 
     <div id="nossos_contatos_inicial">
