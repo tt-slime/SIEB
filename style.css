@@ -9,128 +9,646 @@
     font-style: normal;
 }
 
-/* Estilo para o pop-up fazer login */
-.modal {
-    display: none;
-    /* Inicialmente invisível */
-    position: fixed;
-    /* Fixa na tela */
-    z-index: 1;
-    /* Empilha na frente de outros elementos */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Cobrindo toda a largura da tela */
-    height: 100%;
-    /* Cobrindo toda a altura da tela */
-    overflow: auto;
-    /* Adiciona rolagem se o conteúdo exceder o tamanho da janela */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Fundo semitransparente */
-}
 
-/* Estilo para o conteúdo do pop-up fazer login */
-.modal-content {
-    background-color: rgb(105, 0, 175);
-    /* Cor de fundo */
-    margin: 15% auto;
-    /* Margem centralizada verticalmente e 15% do topo */
-    height: 15vw;
-    /* Altura fixa */
-    border: 0.02vw solid #FBE94B;
-    /* Borda */
-    width: 25vw;
-    /* Largura fixa */
-    border-radius: 0.4vw;
-    /* Cantos arredondados */
-    position: relative;
-    /* Posição relativa */
-}
 
-/* Estilo para o título dentro do pop-up fazer loign */
-#titulo_fazer_login {
-    text-align: center;
-    /* Alinhamento central */
-    font-family: 'Open Sans';
-    /* Fonte 'Open Sans' */
-    font-size: 2.2vw;
-    /* Tamanho da fonte */
-    color: #FBE94B;
-    /* Cor do texto */
-}
+@media screen and (max-width: 500px) {
 
-/* Estilo para o contêiner dos campos de login */
-#input_login {
-    display: flex;
-    /* Modelo flexível */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-}
-
-/* Estilo para os campos de entrada dentro do contêiner de login */
-#input_login input {
-    margin: 0vw 0.5vw;
-    /* Espaço entre os inputs */
-    padding: 0.7vw;
-    /* Preenchimento interno */
-    width: 9.5vw;
-    /* Largura dos inputs */
-}
-
-/* Estilo para o botão de login */
-#botao_entrar {
-    display: block;
-    /* Bloco de nível */
-    margin: 1.5vw auto 0;
-    /* Margem superior e inferior auto para centralizar */
-    padding: 0.5vw 1vw;
-    /* Preenchimento */
-    color: rgb(105, 0, 175);
-    /* Cor do texto */
-    background-color: #FBE94B;
-    /* Cor de fundo */
-    border: none;
-    /* Sem borda */
-    border-radius: 0.3vw;
-    /* Cantos arredondados */
-    cursor: pointer;
-    /* Cursor ao passar */
-    font-weight: bold;
-    /* Peso da fonte */
-    font-size: 1vw;
-    /* Tamanho da fonte */
-}
-
-/* Estilo comum para os campos de usuário e senha */
-#username,
-#password {
-    border-radius: 5px;
-    /* Cantos arredondados */
-    border-style: none;
-
-}
-
-/* Estilo para o botão de fechar o pop-up fazer login */
-.close {
-    color: #fff;
-    /* Cor do texto */
-    cursor: pointer;
-    /* Cursor ao passar */
-}
-
-#close_login {
+    .modal {
+        display: none;
+        /* Inicialmente invisível */
+        position: fixed;
+        /* Fixa na tela */
+        z-index: 1;
+        /* Empilha na frente de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Cobrindo toda a largura da tela */
+        height: 100%;
+        /* Cobrindo toda a altura da tela */
+        overflow: auto;
+        /* Adiciona rolagem se o conteúdo exceder o tamanho da janela */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Fundo semitransparente */
+    }
     
-    position: absolute;
-    /* Posição absoluta */
-    top: 0vw;
-    /* Distância do topo */
-    right: 0.4vw;
-    /* Distância da direita */
-    font-size: 1.7vw;
-    /* Tamanho da fonte */
+    /* Estilo para o conteúdo do pop-up fazer login */
+    .modal-content {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+        margin: 15% auto;
+        /* Margem centralizada verticalmente e 15% do topo */
+        height: 45vw;
+        /* Altura fixa */
+        border: 0.02vw solid #FBE94B;
+        /* Borda */
+        width: 70vw;
+        /* Largura fixa */
+        border-radius: 0.4vw;
+        /* Cantos arredondados */
+        position: relative;
+        /* Posição relativa */
+    }
+    
+    /* Estilo para o título dentro do pop-up fazer loign */
+    #titulo_fazer_login {
+        text-align: center;
+        /* Alinhamento central */
+        font-family: 'Open Sans';
+        /* Fonte 'Open Sans' */
+        font-size: 6vw;
+        /* Tamanho da fonte */
+        color: #FBE94B;
+        /* Cor do texto */
+    }
+    
+    /* Estilo para o contêiner dos campos de login */
+    #input_login {
+        display: flex;
+        /* Modelo flexível */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+    
+    /* Estilo para os campos de entrada dentro do contêiner de login */
+    #input_login input {
+        margin: 0vw 0.5vw;
+        /* Espaço entre os inputs */
+        padding: 1.7vw;
+        /* Preenchimento interno */
+        width: 30.5vw;
+        /* Largura dos inputs */
+    }
+    
+    /* Estilo para o botão de login */
+    #botao_entrar {
+        display: block;
+        /* Bloco de nível */
+        margin: 4vw auto 0;
+        /* Margem superior e inferior auto para centralizar */
+        padding: 3vw 4vw;
+        /* Preenchimento */
+        color: rgb(105, 0, 175);
+        /* Cor do texto */
+        background-color: #FBE94B;
+        /* Cor de fundo */
+        border: none;
+        /* Sem borda */
+        border-radius: 0.7vw;
+        /* Cantos arredondados */
+        cursor: pointer;
+        /* Cursor ao passar */
+        font-weight: bold;
+        /* Peso da fonte */
+        font-size: 4vw;
+        /* Tamanho da fonte */
+    }
+    
+    /* Estilo comum para os campos de usuário e senha */
+    #username,
+    #password {
+        border-radius: 5px;
+        /* Cantos arredondados */
+        border-style: none;
+    
+    }
+    
+    /* Estilo para o botão de fechar o pop-up fazer login */
+    .close {
+        color: #fff;
+        /* Cor do texto */
+        cursor: pointer;
+        /* Cursor ao passar */
+    }
+    
+    #close_login {
+        
+        position: absolute;
+        /* Posição absoluta */
+        top: -2.2vw;
+        /* Distância do topo */
+        right: 1vw;
+        /* Distância da direita */
+        font-size: 8vw;
+        /* Tamanho da fonte */
+    }
+
+
+    body {
+        font-family: 'Open Sans';
+        margin: 0;
+        /* Margem zero */
+        padding: 0;
+        /* Preenchimento zero */
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+    }
+
+    /* Estilo para o cabeçalho */
+    header {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+        color: #fff;
+        /* Cor do texto */
+        padding: 2vw;
+        /* Preenchimento interno */
+        text-align: left;
+        /* Alinhamento do texto */
+    }
+
+    /* Estilo para o título de nível 1 */
+    h1 {
+        font-size: 5vw;
+        /* Tamanho da fonte */
+        margin: 0;
+        /* Margem zero */
+    }
+
+        /* Estilo para a navegação */
+    nav ul {
+        position: absolute;
+        /* Posição absoluta */
+        top: 4vw;
+        /* Distância do topo */
+        right: 1vw;
+        /* Distância da direita */
+        text-align: right;
+        /* Alinhamento do texto */
+        list-style-type: none;
+        /* Remove marcadores de lista */
+        margin: 0;
+        /* Margem zero */
+        padding: 0;
+        /* Preenchimento zero */
+        display: none;
+    }
+
+    /* Estilo para os itens de lista na navegação */
+    nav ul li {
+        display: inline-block;
+        /* Exibição em linha */
+
+    }
+
+    /* Estilo para os links na navegação */
+    nav a {
+        text-decoration: none;
+        /* Sem decoração de texto */
+    }
+    
+    /* Estilo para o link de login */
+    #login-link {
+        position: absolute;
+        /* Posição absoluta */
+        right: 2.7vw;
+        /* Distância da direita */
+        text-decoration: none;
+        /* Sem decoração de texto */
+        color: #FBE94B;
+        /* Cor do texto */
+        top: 14.5vw;
+        font-size: 4vw;
+    }
+
+    /* Estilo para a imagem dentro do link de login */
+    #login-link img {
+        width: 4vw;
+        /* Largura da imagem */
+        height: 4.2vw;
+        /* Altura da imagem */
+        vertical-align: middle;
+        /* Alinhamento vertical */
+    }
+
+    .menu_inicial
+    {
+        display: inline-block;
+    }
+
+    .menu_inicial_content
+    {
+        display: none;
+        background-color: #CA99EB;
+        box-shadow: 0vw 2vw 8vw 1vw rgba(0,0,0,0.4);
+        height: auto;
+        width: 60vw;
+        /* Preenchimento */
+        list-style-type: none;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .menu_inicial_content li 
+    {
+        margin: 5vw;
+        margin-bottom: 10vw;
+    }
+
+    .menu_inicial_content li a 
+    {
+        color: #FBE94B;
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .menu_inicial:hover .menu_inicial_content
+    {
+        display:list-item;
+    }
+
+    #menu-icon
+    {
+        position: absolute;
+        width: 16vw;
+        height: 16vw;
+        top: 1VW;
+        right: 2.4vw;
+    }
+
 }
+
+@media screen and (min-width: 501px) and (max-width: 768px)
+{
+
+    .modal {
+        display: none;
+        /* Inicialmente invisível */
+        position: fixed;
+        /* Fixa na tela */
+        z-index: 1;
+        /* Empilha na frente de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Cobrindo toda a largura da tela */
+        height: 100%;
+        /* Cobrindo toda a altura da tela */
+        overflow: auto;
+        /* Adiciona rolagem se o conteúdo exceder o tamanho da janela */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Fundo semitransparente */
+    }
+    
+    /* Estilo para o conteúdo do pop-up fazer login */
+    .modal-content {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+        margin: 15% auto;
+        /* Margem centralizada verticalmente e 15% do topo */
+        height: 40vw;
+        /* Altura fixa */
+        border: 0.02vw solid #FBE94B;
+        /* Borda */
+        width: 70vw;
+        /* Largura fixa */
+        border-radius: 0.4vw;
+        /* Cantos arredondados */
+        position: relative;
+        /* Posição relativa */
+    }
+    
+    /* Estilo para o título dentro do pop-up fazer loign */
+    #titulo_fazer_login {
+        text-align: center;
+        /* Alinhamento central */
+        font-family: 'Open Sans';
+        /* Fonte 'Open Sans' */
+        font-size: 6vw;
+        /* Tamanho da fonte */
+        color: #FBE94B;
+        /* Cor do texto */
+    }
+    
+    /* Estilo para o contêiner dos campos de login */
+    #input_login {
+        display: flex;
+        /* Modelo flexível */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+    
+    /* Estilo para os campos de entrada dentro do contêiner de login */
+    #input_login input {
+        margin: 0vw 0.5vw;
+        /* Espaço entre os inputs */
+        padding: 1.7vw;
+        /* Preenchimento interno */
+        width: 30.5vw;
+        /* Largura dos inputs */
+    }
+    
+    /* Estilo para o botão de login */
+    #botao_entrar {
+        display: block;
+        /* Bloco de nível */
+        margin: 4vw auto 0;
+        /* Margem superior e inferior auto para centralizar */
+        padding: 2vw 2vw;
+        /* Preenchimento */
+        color: rgb(105, 0, 175);
+        /* Cor do texto */
+        background-color: #FBE94B;
+        /* Cor de fundo */
+        border: none;
+        /* Sem borda */
+        border-radius: 0.7vw;
+        /* Cantos arredondados */
+        cursor: pointer;
+        /* Cursor ao passar */
+        font-weight: bold;
+        /* Peso da fonte */
+        font-size: 3.5vw;
+        /* Tamanho da fonte */
+    }
+    
+    /* Estilo comum para os campos de usuário e senha */
+    #username,
+    #password {
+        border-radius: 5px;
+        /* Cantos arredondados */
+        border-style: none;
+    
+    }
+    
+    /* Estilo para o botão de fechar o pop-up fazer login */
+    .close {
+        color: #fff;
+        /* Cor do texto */
+        cursor: pointer;
+        /* Cursor ao passar */
+    }
+    
+    #close_login {
+        
+        position: absolute;
+        /* Posição absoluta */
+        top: -2.2vw;
+        /* Distância do topo */
+        right: 0.5vw;
+        /* Distância da direita */
+        font-size: 6vw;
+        /* Tamanho da fonte */
+    }
+
+
+    body {
+        font-family: 'Open Sans';
+        margin: 0;
+        /* Margem zero */
+        padding: 0;
+        /* Preenchimento zero */
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+    }
+    /* Estilo para o cabeçalho */
+    header {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+        color: #fff;
+        /* Cor do texto */
+        padding: 2vw;
+        /* Preenchimento interno */
+        text-align: left;
+        /* Alinhamento do texto */
+    }
+
+    /* Estilo para o título de nível 1 */
+    h1 {
+        font-size: 5vw;
+        /* Tamanho da fonte */
+        margin: 0;
+        /* Margem zero */
+    }
+
+    /* Estilo para a navegação */
+    nav ul {
+        position: absolute;
+        /* Posição absoluta */
+        top: 4vw;
+        /* Distância do topo */
+        right: 1vw;
+        /* Distância da direita */
+        text-align: right;
+        /* Alinhamento do texto */
+        list-style-type: none;
+        /* Remove marcadores de lista */
+        margin: 0;
+        /* Margem zero */
+        padding: 0;
+        /* Preenchimento zero */
+        display: none;
+    }
+
+    /* Estilo para os itens de lista na navegação */
+    nav ul li {
+        display: inline-block;
+        /* Exibição em linha */
+
+    }
+
+    /* Estilo para os links na navegação */
+    nav a {
+        text-decoration: none;
+        /* Sem decoração de texto */
+    }
+
+    /* Estilo para o link de login */
+    #login-link {
+        position: absolute;
+        /* Posição absoluta */
+        right: 2.7vw;
+        /* Distância da direita */
+        text-decoration: none;
+        /* Sem decoração de texto */
+        color: #FBE94B;
+        /* Cor do texto */
+        top: 13vw;
+        font-size: 4vw;
+    }
+
+    /* Estilo para a imagem dentro do link de login */
+    #login-link img {
+        width: 4vw;
+        /* Largura da imagem */
+        height: 4.2vw;
+        /* Altura da imagem */
+        vertical-align: middle;
+        /* Alinhamento vertical */
+    }
+
+    .menu_inicial
+    {
+        display: inline-block;
+    }
+
+    .menu_inicial_content
+    {
+        display: none;
+        background-color: #CA99EB;
+        box-shadow: 0vw 2vw 8vw 1vw rgba(0,0,0,0.4);
+        height: auto;
+        width: 40vw;
+        /* Preenchimento */
+        list-style-type: none;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .menu_inicial_content li 
+    {
+        margin: 4vw;
+        margin-bottom: 8vw;
+    }
+
+    .menu_inicial_content li a 
+    {
+        color: #FBE94B;
+        font-size: 4.5vw;        
+    }
+
+    .menu_inicial:hover .menu_inicial_content
+    {
+        display:list-item;
+    }
+
+    #menu-icon
+    {
+        position: absolute;
+        width: 16vw;
+        height: 16vw;
+        top: 0.5VW;
+        right: 2.4vw;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px)
+{
+    .modal {
+        display: none;
+        /* Inicialmente invisível */
+        position: fixed;
+        /* Fixa na tela */
+        z-index: 1;
+        /* Empilha na frente de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Cobrindo toda a largura da tela */
+        height: 100%;
+        /* Cobrindo toda a altura da tela */
+        overflow: auto;
+        /* Adiciona rolagem se o conteúdo exceder o tamanho da janela */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Fundo semitransparente */
+    }
+    
+    /* Estilo para o conteúdo do pop-up fazer login */
+    .modal-content {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
+        margin: 15% auto;
+        /* Margem centralizada verticalmente e 15% do topo */
+        height: 30vw;
+        /* Altura fixa */
+        border: 0.02vw solid #FBE94B;
+        /* Borda */
+        width: 70vw;
+        /* Largura fixa */
+        border-radius: 0.4vw;
+        /* Cantos arredondados */
+        position: relative;
+        /* Posição relativa */
+    }
+    
+    /* Estilo para o título dentro do pop-up fazer loign */
+    #titulo_fazer_login {
+        text-align: center;
+        /* Alinhamento central */
+        font-family: 'Open Sans';
+        /* Fonte 'Open Sans' */
+        font-size: 4vw;
+        /* Tamanho da fonte */
+        color: #FBE94B;
+        /* Cor do texto */
+    }
+    
+    /* Estilo para o contêiner dos campos de login */
+    #input_login {
+        display: flex;
+        /* Modelo flexível */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+    
+    /* Estilo para os campos de entrada dentro do contêiner de login */
+    #input_login input {
+        margin: 0vw 0.5vw;
+        /* Espaço entre os inputs */
+        padding: 1.4vw;
+        /* Preenchimento interno */
+        width: 30.5vw;
+        /* Largura dos inputs */
+    }
+    
+    /* Estilo para o botão de login */
+    #botao_entrar {
+        display: block;
+        /* Bloco de nível */
+        margin: 4vw auto 0;
+        /* Margem superior e inferior auto para centralizar */
+        padding: 1.3vw 1.5vw;
+        /* Preenchimento */
+        color: rgb(105, 0, 175);
+        /* Cor do texto */
+        background-color: #FBE94B;
+        /* Cor de fundo */
+        border: none;
+        /* Sem borda */
+        border-radius: 0.7vw;
+        /* Cantos arredondados */
+        cursor: pointer;
+        /* Cursor ao passar */
+        font-weight: bold;
+        /* Peso da fonte */
+        font-size: 3vw;
+        /* Tamanho da fonte */
+    }
+    
+    /* Estilo comum para os campos de usuário e senha */
+    #username,
+    #password {
+        border-radius: 5px;
+        /* Cantos arredondados */
+        border-style: none;
+    
+    }
+    
+    /* Estilo para o botão de fechar o pop-up fazer login */
+    .close {
+        color: #fff;
+        /* Cor do texto */
+        cursor: pointer;
+        /* Cursor ao passar */
+    }
+    
+    #close_login {
+        
+        position: absolute;
+        /* Posição absoluta */
+        top: -1.8vw;
+        /* Distância do topo */
+        right: 0.5vw;
+        /* Distância da direita */
+        font-size: 4.5vw;
+        /* Tamanho da fonte */
+    }
 
 /* Estilo geral para o corpo da página */
 body {
@@ -149,7 +667,7 @@ header {
     /* Cor de fundo */
     color: #fff;
     /* Cor do texto */
-    padding: 1.5vw;
+    padding: 4vw;
     /* Preenchimento interno */
     text-align: left;
     /* Alinhamento do texto */
@@ -157,17 +675,18 @@ header {
 
 /* Estilo para o título de nível 1 */
 h1 {
-    font-size: 1.6vw;
+    font-size: 3vw;
     /* Tamanho da fonte */
     margin: 0;
     /* Margem zero */
+    max-width: 50%;
 }
 
 /* Estilo para a navegação */
 nav ul {
     position: absolute;
     /* Posição absoluta */
-    top: 1.8vw;
+    top: 4vw;
     /* Distância do topo */
     right: 1vw;
     /* Distância da direita */
@@ -192,7 +711,7 @@ nav ul li a {
     padding: 0 0.7vw;
     /* Mantém o preenchimento ao redor do texto do link */
     margin-right: 1vw;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 
@@ -263,73 +782,131 @@ nav li.dropdown:hover .dropdown-content {
     /* Sem decoração de texto */
     color: #FBE94B;
     /* Cor do texto */
-    top: 4.3vw;
-    font-size: 1vw;
+    top: 8vw;
+    font-size: 1.7vw;
 }
 
 /* Estilo para a imagem dentro do link de login */
 #login-link img {
-    width: 1.5vw;
+    width: 3vw;
     /* Largura da imagem */
-    height: 1.5vw;
+    height: 3vw;
     /* Altura da imagem */
     vertical-align: middle;
     /* Alinhamento vertical */
 }
 
-@media screen and (max-width: 768px) {
+.menu_inicial
+{
+    display: none;
+}
+}
 
-
-
+@media screen and (min-width: 1001px)
+{
+    .modal {
+        display: none;
+        /* Inicialmente invisível */
+        position: fixed;
+        /* Fixa na tela */
+        z-index: 1;
+        /* Empilha na frente de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Cobrindo toda a largura da tela */
+        height: 100%;
+        /* Cobrindo toda a altura da tela */
+        overflow: auto;
+        /* Adiciona rolagem se o conteúdo exceder o tamanho da janela */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Fundo semitransparente */
+    }
+    
     /* Estilo para o conteúdo do pop-up fazer login */
     .modal-content {
+        background-color: rgb(105, 0, 175);
+        /* Cor de fundo */
         margin: 15% auto;
         /* Margem centralizada verticalmente e 15% do topo */
-        height: 25vw;
+        height: 30vw;
         /* Altura fixa */
-        width: 40vw;
+        border: 0.2vw solid #FBE94B;
+        /* Borda */
+        width: 55vw;
         /* Largura fixa */
         border-radius: 0.4vw;
         /* Cantos arredondados */
+        position: relative;
+        /* Posição relativa */
     }
-
+    
     /* Estilo para o título dentro do pop-up fazer loign */
     #titulo_fazer_login {
-        font-size: 3.5vw;
+        text-align: center;
+        /* Alinhamento central */
+        font-family: 'Open Sans';
+        /* Fonte 'Open Sans' */
+        font-size: 4vw;
         /* Tamanho da fonte */
+        color: #FBE94B;
+        /* Cor do texto */
     }
-
+    
+    /* Estilo para o contêiner dos campos de login */
+    #input_login {
+        display: flex;
+        /* Modelo flexível */
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+    
     /* Estilo para os campos de entrada dentro do contêiner de login */
     #input_login input {
         margin: 0vw 0.5vw;
         /* Espaço entre os inputs */
-        padding: 0.7vw;
+        padding: 1.4vw;
         /* Preenchimento interno */
-        width: 15vw;
+        width: 20vw;
         /* Largura dos inputs */
     }
-
+    
     /* Estilo para o botão de login */
     #botao_entrar {
-        margin: 1.5vw auto 0;
+        display: block;
+        /* Bloco de nível */
+        margin: 4vw auto 0;
         /* Margem superior e inferior auto para centralizar */
-        padding: 0.5vw 1vw;
+        padding: 1vw 1.6vw;
         /* Preenchimento */
-        border-radius: 0.3vw;
+        color: rgb(105, 0, 175);
+        /* Cor do texto */
+        background-color: #FBE94B;
+        /* Cor de fundo */
+        border: none;
+        /* Sem borda */
+        border-radius: 0.7vw;
         /* Cantos arredondados */
+        cursor: pointer;
+        /* Cursor ao passar */
+        font-weight: bold;
+        /* Peso da fonte */
         font-size: 2vw;
         /* Tamanho da fonte */
     }
-
+    
     /* Estilo comum para os campos de usuário e senha */
     #username,
     #password {
         border-radius: 5px;
         /* Cantos arredondados */
         border-style: none;
-
+        font-size: 1.5vw;
+    
     }
-
+    
     /* Estilo para o botão de fechar o pop-up fazer login */
     .close {
         color: #fff;
@@ -337,155 +914,169 @@ nav li.dropdown:hover .dropdown-content {
         cursor: pointer;
         /* Cursor ao passar */
     }
-
+    
     #close_login {
         
         position: absolute;
         /* Posição absoluta */
-        top: 0vw;
+        top: -1.3vw;
         /* Distância do topo */
-        right: 1vw;
+        right: 0.5vw;
         /* Distância da direita */
-        font-size: 3vw;
+        font-size: 4.5vw;
         /* Tamanho da fonte */
     }
 
+/* Estilo geral para o corpo da página */
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    /* Margem zero */
+    padding: 0;
+    /* Preenchimento zero */
+    background-color: rgb(105, 0, 175);
+    /* Cor de fundo */
+}
 
-    /* Estilo para o cabeçalho */
-    header {
-        background-color: rgb(105, 0, 175);
-        /* Cor de fundo */
-        color: #fff;
-        /* Cor do texto */
-        padding: 5vw;
-        /* Preenchimento interno */
-        text-align: left;
-        /* Alinhamento do texto */
-    }
+/* Estilo para o cabeçalho */
+header {
+    background-color: rgb(105, 0, 175);
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    padding: 3vw;
+    /* Preenchimento interno */
+    text-align: left;
+    /* Alinhamento do texto */
+}
 
-    /* Estilo para o título de nível 1 */
-    h1 {
-        font-size: 2.6vw;
-        /* Tamanho da fonte */
-        margin: 0;
-        /* Margem zero */
-    }
+/* Estilo para o título de nível 1 */
+h1 {
+    font-size: 3vw;
+    /* Tamanho da fonte */
+    margin: 0;
+    /* Margem zero */
+    max-width: 50%;
+}
 
-    /* Estilo para a navegação */
-    nav ul {
-        position: absolute;
-        /* Posição absoluta */
-        top: 3vw;
-        /* Distância do topo */
-        right: 1vw;
-        /* Distância da direita */
-        max-width: 55vw;
-        text-align: right;
-        /* Alinhamento do texto */
-        list-style-type: none;
-        /* Remove marcadores de lista */
-        margin: 0;
-        /* Margem zero */
-        padding: 0;
-        /* Preenchimento zero */
-    }
+/* Estilo para a navegação */
+nav ul {
+    position: absolute;
+    /* Posição absoluta */
+    top: 3.2vw;
+    /* Distância do topo */
+    right: 1.2vw;
+    /* Distância da direita */
+    text-align: right;
+    /* Alinhamento do texto */
+    list-style-type: none;
+    /* Remove marcadores de lista */
+    margin: 0;
+    /* Margem zero */
+    padding: 0;
+    /* Preenchimento zero */
+}
 
-    /* Estilo para os itens de lista na navegação */
-    nav ul li {
-        display: inline-block;
-        /* Exibição em linha */
+/* Estilo para os itens de lista na navegação */
+nav ul li {
+    display: inline-block;
+    /* Exibição em linha */
 
-    }
+}
 
-    nav ul li a {
-        padding: 0 0.7vw;
-        /* Mantém o preenchimento ao redor do texto do link */
-        margin-right: 1vw;
-        font-size: 2.5vw;
-    }
+nav ul li a {
+    padding: 0 0.7vw;
+    /* Mantém o preenchimento ao redor do texto do link */
+    margin-right: 1vw;
+    font-size: 1.8vw;
+}
 
 
-    /* Estilo para os links na navegação */
-    nav a {
-        text-decoration: none;
-        /* Sem decoração de texto */
-        color: #fff;
-        /* Cor do texto */
-    }
+/* Estilo para os links na navegação */
+nav a {
+    text-decoration: none;
+    /* Sem decoração de texto */
+    color: #fff;
+    /* Cor do texto */
+}
 
-    /* Estilo para os itens de lista de navegação com dropdown */
-    nav ul li.dropdown {
-        position: relative;
-        /* Posição relativa */
-        display: inline-block;
-        /* Exibição em bloco */
-    }
+/* Estilo para os itens de lista de navegação com dropdown */
+nav ul li.dropdown {
+    position: relative;
+    /* Posição relativa */
+    display: inline-block;
+    /* Exibição em bloco */
+}
 
-    /* Estilo para o conteúdo do dropdown */
-    nav .dropdown-content {
-        display: none;
-        /* Inicialmente oculto */
-        position: absolute;
-        /* Posição absoluta */
-        background-color: rgb(202, 153, 235);
-        /* Cor de fundo */
-        box-shadow: 0vw 0.4vw 0.6vw 0vw rgba(0, 0, 0, 0.2);
-        /* Sombra */
-        z-index: 1;
-        /* Empilhamento */
-        right: -1vw;
-    }
+/* Estilo para o conteúdo do dropdown */
+nav .dropdown-content {
+    display: none;
+    /* Inicialmente oculto */
+    position: absolute;
+    /* Posição absoluta */
+    background-color: rgb(202, 153, 235);
+    /* Cor de fundo */
+    box-shadow: 0vw 0.4vw 0.6vw 0vw rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    z-index: 1;
+    /* Empilhamento */
+    right: -1.2vw;
+}
 
-    /* Estilo para os links no conteúdo do dropdown */
-    nav .dropdown-content a {
-        color: #FBE94B;
-        /* Cor do texto */
-        padding: 0.5vw 1vw;
-        /* Preenchimento */
-        display: block;
-        /* Exibição em bloco */
-        text-decoration: none;
-        /* Sem decoração de texto */
-        text-align: center;
-        /* Alinhamento do texto */
-    }
+/* Estilo para os links no conteúdo do dropdown */
+nav .dropdown-content a {
+    color: #FBE94B;
+    /* Cor do texto */
+    padding: 0.5vw 1vw;
+    /* Preenchimento */
+    display: block;
+    /* Exibição em bloco */
+    text-decoration: none;
+    /* Sem decoração de texto */
+    text-align: center;
+    /* Alinhamento do texto */
+}
 
-    /* Estilo para os links no conteúdo do dropdown quando hover */
-    nav .dropdown-content a:hover {
-        background-color: rgb(73, 0, 122);
-        /* Cor de fundo ao passar o mouse */
-    }
+/* Estilo para os links no conteúdo do dropdown quando hover */
+nav .dropdown-content a:hover {
+    background-color: rgb(73, 0, 122);
+    /* Cor de fundo ao passar o mouse */
+}
 
-    /* Exibe o conteúdo do dropdown quando o item de lista é hover */
-    nav li.dropdown:hover .dropdown-content {
-        display: block;
-        /* Exibe o conteúdo do dropdown */
-    }
+/* Exibe o conteúdo do dropdown quando o item de lista é hover */
+nav li.dropdown:hover .dropdown-content {
+    display: block;
+    /* Exibe o conteúdo do dropdown */
+}
 
-    /* Estilo para o link de login */
-    #login-link {
-        position: absolute;
-        /* Posição absoluta */
-        right: 2.7vw;
-        /* Distância da direita */
-        text-decoration: none;
-        /* Sem decoração de texto */
-        color: #FBE94B;
-        /* Cor do texto */
-        top: 13vw;
-        font-size: 2.5vw;
-    }
+/* Estilo para o link de login */
+#login-link {
+    position: absolute;
+    /* Posição absoluta */
+    right: 2.7vw;
+    /* Distância da direita */
+    text-decoration: none;
+    /* Sem decoração de texto */
+    color: #FBE94B;
+    /* Cor do texto */
+    top: 8vw;
+    font-size: 1.8vw;
+}
 
-    /* Estilo para a imagem dentro do link de login */
-    #login-link img {
-        width: 2.5vw;
-        /* Largura da imagem */
-        height: 2.5vw;
-        /* Altura da imagem */
-        vertical-align: middle;
-        /* Alinhamento vertical */
-    }
+/* Estilo para a imagem dentro do link de login */
+#login-link img {
+    width: 2.8vw;
+    /* Largura da imagem */
+    height: 2.8vw;
+    /* Altura da imagem */
+    vertical-align: middle;
+    /* Alinhamento vertical */
+}
 
+.menu_inicial
+{
+    display: none;
+}
 }
 
 /* Geral */
@@ -495,347 +1086,738 @@ nav li.dropdown:hover .dropdown-content {
 
 /* Página Inicial */
 
-#capa_inicial {
-    width: 50vw;
-    height: 50vw;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: -80px;
-}
+@media screen and (max-width: 500px) {
+    
+    #faixa_inicial{
+        background-color: #A54EDF;
+        width: 100%;
+        height: 80vw;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #imagem_inicial{
+        width: 70vw;
+        height: 70vw;
+        margin-top: -6vw;
+    }
+    
+    #texto_faixa_inicial{
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 5vw;
+    }
 
-#capa_texto {
-    color: white;
-    font-size: 2vw;
-    font-family: 'Open Sans';
-    text-align: center;
-    position: relative;
-    top: -150px;
-}
+    #faixa_resumo_inicial{
+        width: 100%;
+        height: 65vw;
+        background-color: #6900AF;
+        position: relative;
+    }
 
-#faixa_inicial {
+    #subtitulo_resumo_inicial{
+        font-size: 6vw;
+        text-align: center;
+        color: white;
+        margin-top: 6vw;
+    }
+
+    #texto_resumo_inicial{
+        font-size: 5vw;
+        color: white;
+        text-align: justify;
+        margin: 6vw;
+    }
+
+    .carrossel_inicial{
+        margin-top: -18vw;
+        margin-bottom: -18vw;
+    }
+
+    .carrossel_inicial_imagem
+    {
+        width: 100%;
+        height: 80vw;
+    }
+
+    #faixa_depoimento_inicial{
     background-color: #A54EDF;
-    height: 95vh;
-    width: 100%;
-}
-
-#faixa_inicial2 {
-    background-color: #6900AF;
-    height: auto;
-    width: 100%;
-    padding: 40px 0;
-}
-
-#titulo_inicial {
-    color: white;
-    text-align: center;
-    font-family: 'Open Sans';
-    font-size: 3.5vw;
-    margin-top: 40px;
-}
-
-#inicial_texto {
-    color: white;
-    font-size: 1.3vw;
-    font-family: 'Open Sans';
-    text-align: justify;
-    max-width: 90%;
-    /* Limita a largura máxima a 90% do contêiner pai */
-    margin-left: auto;
-    /* Margem à esquerda automática */
-    margin-right: auto;
-    /* Margem à direita automática */
-    padding: 0 5vw;
-    /* Adiciona preenchimento responsivo */
-    margin-bottom: -11vw;
-}
-
-#carousel_inicial {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin-bottom: -12.4vw;
-}
-
-.slide_inicial {
-    display: none;
-}
-
-.slide_inicial img {
-    width: 100%;
-    height: auto;
-}
-
-#faixa_inicial3 {
-    background-color: #A54EDF;
-    height: 400px;
+    height: 20vw;
     /* Ajuste conforme necessário */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
-#depoimentos_inicial {
+    #depoimentos_inicial {
+        font-family: 'Open Sans';
+        font-size: 5vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    #depoimento_imagem_inicial1{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        /* Adicionado para permitir que os elementos fiquem lado a lado */
+        vertical-align: middle;
+        /* Adicionado para alinhar verticalmente com o texto */
+    }
+
+    #depoimento_imagem_inicial2{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        float: right;
+        vertical-align: middle;
+    }
+
+    #depoimento_frase_inicial1{
     font-family: 'Open Sans';
-    font-size: 3.5vw;
-    color: white;
-    font-weight: bold;
-}
-
-#teste1_inicial {
-    width: 50%;
-    height: auto;
-    /* Alterado para 'auto' para manter a proporção da imagem */
-    /* Adicionado para permitir que os elementos fiquem lado a lado */
-    vertical-align: middle;
-    /* Adicionado para alinhar verticalmente com o texto */
-}
-
-#teste2_inicial {
-    width: 50%;
-    height: auto;
-    /* Alterado para 'auto' para manter a proporção da imagem */
-    float: right;
-}
-
-.container2 {
-    height: auto;
-    padding: 0px 0;
-}
-
-#subteste1_inicial {
-    font-family: 'Open Sans';
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
     display: inline-block;
     /* Adicionado para permitir que os elementos fiquem lado a lado */
     vertical-align: middle;
     /* Adicionado para alinhar verticalmente com a imagem */
-    margin-left: 50px;
-}
+    margin-left: 7.5vw;
+    }
 
-#subteste2_inicial {
+    #depoimento_frase_inicial2{
     font-family: 'Open Sans';
-    font-size: 3.5vw;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
-    text-align: right;
-    position: relative;
-    bottom: -220px;
-    right: 50px;
-}
-
-
-#imagem_frase_inicial {
-    width: 100%;
-    height: auto;
-}
-
-#texto_frase_inicial {
-    position: relative;
-    text-align: center;
-    z-index: 1;
-    top: -35vw;
-    color: white;
-    font-family: 'Open Sans';
-    font-size: 2vw;
-
-    background-color: rgba(0, 0, 0, 0.432);
-    padding: 1rem 2rem;
-    /* Adicionado preenchimento */
-}
-
-#nossos_contatos_inicial {
-    height: auto;
-    width: 100%;
-    background-color: #FBE94B;
-    position: relative;
-    top: -126px;
-    padding: 40px 0;
-    /* Adicionado preenchimento */
-}
-
-#titulo_contatos_inicial {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    font-size: 3vw;
-    text-align: center;
-    color: #6900AF;
-}
-
-#numeros_inicial {
-    font-family: 'Open Sans';
-    font-size: 1.5vw;
-    text-align: center;
-    color: #6900AF;
-}
-
-#rodape_inicial {
-    margin-top: 5vw;
-    font-size: 1.5vw;
-    text-align: center;
-    color: white;
-    position: relative;
-    margin-bottom: 2vw;
-    bottom: 0px;
-    top: -85px;
-}
-
-#copyright_inicial {
-    font-size: 1vw;
-    color: white;
-    text-align: center;
-    position: relative;
-    bottom: 0px;
-    margin-bottom: 3vw;
-    top: -50px;
-}
-
-@media screen and (max-width: 768px) {
-
-    #capa_inicial {
-        width: 50vw;
-        height: 50vw;
-        top: -4vw;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    margin-top: 25vw;
     }
-    
-    #capa_texto {
-        font-size: 3vw;
-        top: -10vw;
-    }
-    
-    #faixa_inicial {
-        background-color: #A54EDF;
-        height: 38vh;
+
+    #imagem_citacao_inicial{
         width: 100%;
+        height: auto;
     }
-    
-    #faixa_inicial2 {
-        padding: 2vw 0;
-    }
-    
-    #titulo_inicial {
-        color: white;
+
+    #citacao_frase_inicial {
+        position: relative;
         text-align: center;
+        z-index: 1;
+        top: -43vw;
+        color: white;
         font-family: 'Open Sans';
         font-size: 3.5vw;
-        margin-top: 1vw;
-    }
-    
-    #inicial_texto {
-        font-size: 3.3vw;
-        max-width: 70%;
-        /* Limita a largura máxima a 70% do contêiner pai */
-        padding: 0 5vw;
-        /* Adiciona preenchimento responsivo */
-    }
-    
-    #carousel_inicial {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        margin-bottom: -13vw;
-    }
-    
-    .slide_inicial {
-        display: none;
-    }
-    
-    .slide_inicial img {
-        width: 100%;
-        height: auto;
-    }
-    
-    #faixa_inicial3 {
-        height: 20vw;
-        /* Ajuste conforme necessário */
-        width: 100%;
-    }
-    
-    #depoimentos_inicial {
-        font-size: 4.5vw;
-    }
-    
-    #teste1_inicial {
-        width: 50%;
-        height: auto;
-    }
-    
-    #teste2_inicial {
-        width: 50%;
-        height: auto;
-        /* Alterado para 'auto' para manter a proporção da imagem */
-        float: right;
-    }
-    
-    .container2 {
-        height: auto;
-        padding: 0px 0;
-    }
-    
-    #subteste1_inicial {
-        font-size: 3.5vw;
-        margin-left: 50px;
-    }
-    
-    #subteste2_inicial {
-        font-size: 3.5vw;
-        bottom: -19vw;
-        right: 8vw;
-    }
-    
-    
-    #imagem_frase_inicial {
-        width: 100%;
-        height: auto;
-    }
-    
-    #texto_frase_inicial {
-        top: -36vw;
-        font-size: 2.3vw;
     
         background-color: rgba(0, 0, 0, 0.432);
         padding: 1rem 2rem;
         /* Adicionado preenchimento */
     }
-    
+
     #nossos_contatos_inicial {
         height: auto;
         width: 100%;
-        top: -21vw;
-        padding: 10vw 0;
+        background-color: #FBE94B;
+        padding: 2vw 0;
         /* Adicionado preenchimento */
+        margin-top: -40vw;
     }
-    
+
     #titulo_contatos_inicial {
-        font-size: 4vw;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 5vw;
+        text-align: center;
+        color: #6900AF;
+        margin: 10vw;
     }
     
     #numeros_inicial {
-        font-size: 2.5vw;
+        font-family: 'Open Sans';
+        font-size: 3.5vw;
+        text-align: center;
+        color: #6900AF;
     }
     
     #rodape_inicial {
-        margin-top: 5vw;
-        font-size: 3vw;
-        margin-bottom: 2vw;
-        bottom: 0vw;
-        top: -13vw;
+        padding: 2vw 0;
+    }
+
+    #texto_rodape_inicial{
+        font-family: 'Open Sans';
+        color: white;
+        text-align: center;
+        font-size: 3.2vw;
+        margin-top: 4vw;
     }
     
     #copyright_inicial {
-        font-size: 1.8vw;
-        bottom: 0px;
-        margin-bottom: 3vw;
-        top: -10vw;
+        font-size: 2vw;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -1vw;
+        margin: 3vw;
     }
+
+
 
 }
 
-/* Página Inicial */
+@media screen and (min-width: 501px) and (max-width: 768px)
+{
+    
+    #faixa_inicial{
+        background-color: #A54EDF;
+        width: 100%;
+        height: 80vw;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #imagem_inicial{
+        width: 70vw;
+        height: 70vw;
+        margin-top: -6vw;
+    }
+    
+    #texto_faixa_inicial{
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 5vw;
+    }
 
+    #faixa_resumo_inicial{
+        width: 100%;
+        height: 65vw;
+        background-color: #6900AF;
+        position: relative;
+    }
+
+    #subtitulo_resumo_inicial{
+        font-size: 6vw;
+        text-align: center;
+        color: white;
+        margin-top: 7vw;
+    }
+
+    #texto_resumo_inicial{
+        font-size: 4vw;
+        color: white;
+        text-align: justify;
+        margin: 7vw;
+    }
+
+    .carrossel_inicial{
+        margin-top: -18vw;
+        margin-bottom: -18vw;
+    }
+
+    .carrossel_inicial_imagem
+    {
+        width: 100%;
+        height: 80vw;
+    }
+
+    #faixa_depoimento_inicial{
+    background-color: #A54EDF;
+    height: 20vw;
+    /* Ajuste conforme necessário */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #depoimentos_inicial {
+        font-family: 'Open Sans';
+        font-size: 5vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    #depoimento_imagem_inicial1{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        /* Adicionado para permitir que os elementos fiquem lado a lado */
+        vertical-align: middle;
+        /* Adicionado para alinhar verticalmente com o texto */
+    }
+
+    #depoimento_imagem_inicial2{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        float: right;
+        vertical-align: middle;
+    }
+
+    #depoimento_frase_inicial1{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    }
+
+    #depoimento_frase_inicial2{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    margin-top: 23.5vw;
+    }
+
+    #imagem_citacao_inicial{
+        width: 100%;
+        height: auto;
+    }
+
+    #citacao_frase_inicial {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        top: -43vw;
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 3.5vw;
+    
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 1rem 2rem;
+        /* Adicionado preenchimento */
+    }
+
+    #nossos_contatos_inicial {
+        height: auto;
+        width: 100%;
+        background-color: #FBE94B;
+        padding: 2vw 0;
+        /* Adicionado preenchimento */
+        margin-top: -29vw;
+    }
+
+    #titulo_contatos_inicial {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 4vw;
+        text-align: center;
+        color: #6900AF;
+        max-width: 70vw;
+        margin-left: 15vw;
+    }
+    
+    #numeros_inicial {
+        font-family: 'Open Sans';
+        font-size: 3vw;
+        text-align: center;
+        color: #6900AF;
+    }
+    
+    #rodape_inicial {
+        padding: 2vw 0;
+    }
+
+    #texto_rodape_inicial{
+        font-family: 'Open Sans';
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        margin-top: 4vw;
+    }
+    
+    #copyright_inicial {
+        font-size: 2vw;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -1vw;
+        margin: 3vw;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    #faixa_inicial{
+        background-color: #A54EDF;
+        width: 100%;
+        height: 55vw;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #imagem_inicial{
+        width: 50vw;
+        height: 50vw;
+        margin-top: -4vw;
+    }
+    
+    #texto_faixa_inicial{
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    #faixa_resumo_inicial{
+        width: 100%;
+        height: 65vw;
+        background-color: #6900AF;
+        position: relative;
+    }
+
+    #subtitulo_resumo_inicial{
+        font-size: 5vw;
+        text-align: center;
+        color: white;
+        margin-top: 3vw;
+        max-width: 100%;
+    }
+
+    #texto_resumo_inicial{
+        font-size: 4vw;
+        color: white;
+        text-align: justify;
+        margin: 7vw;
+        margin-top: 2vw;
+    }
+
+    .carrossel_inicial{
+        margin-top: -18vw;
+        margin-bottom: -18vw;
+    }
+
+    .carrossel_inicial_imagem
+    {
+        width: 100%;
+        height: 80vw;
+    }
+
+    #faixa_depoimento_inicial{
+    background-color: #A54EDF;
+    height: 20vw;
+    /* Ajuste conforme necessário */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #depoimentos_inicial {
+        font-family: 'Open Sans';
+        font-size: 5vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    #depoimento_imagem_inicial1{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        /* Adicionado para permitir que os elementos fiquem lado a lado */
+        vertical-align: middle;
+        /* Adicionado para alinhar verticalmente com o texto */
+    }
+
+    #depoimento_imagem_inicial2{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        float: right;
+        vertical-align: middle;
+    }
+
+    #depoimento_frase_inicial1{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    }
+
+    #depoimento_frase_inicial2{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    margin-top: 23.5vw;
+    }
+
+    #imagem_citacao_inicial{
+        width: 100%;
+        height: auto;
+    }
+
+    #citacao_frase_inicial {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        top: -43vw;
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 3.5vw;
+    
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 1rem 2rem;
+        /* Adicionado preenchimento */
+    }
+
+    #nossos_contatos_inicial {
+        height: auto;
+        width: 100%;
+        background-color: #FBE94B;
+        padding: 2vw 0;
+        /* Adicionado preenchimento */
+        margin-top: -29vw;
+    }
+
+    #titulo_contatos_inicial {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 4vw;
+        text-align: center;
+        color: #6900AF;
+        max-width: 70vw;
+        margin-left: 15vw;
+    }
+    
+    #numeros_inicial {
+        font-family: 'Open Sans';
+        font-size: 3vw;
+        text-align: center;
+        color: #6900AF;
+    }
+    
+    #rodape_inicial {
+        padding: 2vw 0;
+    }
+
+    #texto_rodape_inicial{
+        font-family: 'Open Sans';
+        color: white;
+        text-align: center;
+        font-size: 3vw;
+        margin-top: 4vw;
+        max-width: 100%;
+    }
+    
+    #copyright_inicial {
+        font-size: 2vw;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -1vw;
+        margin: 3vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #faixa_inicial{
+        background-color: #A54EDF;
+        width: 100%;
+        height: 55vw;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #imagem_inicial{
+        width: 50vw;
+        height: 50vw;
+        margin-top: -4vw;
+    }
+    
+    #texto_faixa_inicial{
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+    }
+
+    #faixa_resumo_inicial{
+        width: 100%;
+        height: 65vw;
+        background-color: #6900AF;
+        position: relative;
+    }
+
+    #subtitulo_resumo_inicial{
+        font-size: 3.5vw;
+        text-align: center;
+        color: white;
+        margin-top: 3vw;
+        max-width: 100%;
+    }
+
+    #texto_resumo_inicial{
+        font-size: 2.8vw;
+        color: white;
+        text-align: justify;
+        margin: 7vw;
+        margin-top: 2vw;
+    }
+
+    .carrossel_inicial{
+        margin-top: -18vw;
+        margin-bottom: -18vw;
+    }
+
+    .carrossel_inicial_imagem
+    {
+        width: 100%;
+        height: 80vw;
+    }
+
+    #faixa_depoimento_inicial{
+    background-color: #A54EDF;
+    height: 13vw;
+    /* Ajuste conforme necessário */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #depoimentos_inicial {
+        font-family: 'Open Sans';
+        font-size: 3.5vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    #depoimento_imagem_inicial1{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        /* Adicionado para permitir que os elementos fiquem lado a lado */
+        vertical-align: middle;
+        /* Adicionado para alinhar verticalmente com o texto */
+    }
+
+    #depoimento_imagem_inicial2{
+        width: 50%;
+        height: auto;
+        /* Alterado para 'auto' para manter a proporção da imagem */
+        float: right;
+        vertical-align: middle;
+    }
+
+    #depoimento_frase_inicial1{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    }
+
+    #depoimento_frase_inicial2{
+    font-family: 'Open Sans';
+    font-size: 4vw;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    /* Adicionado para permitir que os elementos fiquem lado a lado */
+    vertical-align: middle;
+    /* Adicionado para alinhar verticalmente com a imagem */
+    margin-left: 7.5vw;
+    margin-top: 23.5vw;
+    }
+
+    #imagem_citacao_inicial{
+        width: 100%;
+        height: auto;
+    }
+
+    #citacao_frase_inicial {
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        top: -35vw;
+        color: white;
+        font-family: 'Open Sans';
+        font-size: 2vw;
+    
+        background-color: rgba(0, 0, 0, 0.432);
+        padding: 1rem 2rem;
+        /* Adicionado preenchimento */
+    }
+
+    #nossos_contatos_inicial {
+        height: auto;
+        width: 100%;
+        background-color: #FBE94B;
+        padding: 2vw 0;
+        /* Adicionado preenchimento */
+        margin-top: -16vw;
+    }
+
+    #titulo_contatos_inicial {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: 3vw;
+        text-align: center;
+        color: #6900AF;
+        max-width: 70vw;
+        margin-left: 15vw;
+    }
+    
+    #numeros_inicial {
+        font-family: 'Open Sans';
+        font-size: 2vw;
+        text-align: center;
+        color: #6900AF;
+    }
+    
+    #rodape_inicial {
+        padding: 2vw 0;
+    }
+
+    #texto_rodape_inicial{
+        font-family: 'Open Sans';
+        color: white;
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 4vw;
+        max-width: 100%;
+    }
+    
+    #copyright_inicial {
+        font-size: 1.3vw;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: -1vw;
+        margin: 3vw;
+    }
+}
+
+/* Página Inicial */
 
 /* Pagina sobre */
 
